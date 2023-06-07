@@ -1,0 +1,51 @@
+.container {
+    width: 290px;
+    height: 157px;
+
+    padding: 20px;
+
+    background-color: #FFF;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+
+    .name {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .type {
+        margin-top: 6px;
+        width: 55px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        gap: 4px;
+    }
+
+    .class {
+        display: flex;
+        justify-content: center;
+
+        max-width: 55px;
+        background: #EFEFEF;
+        border-radius: 32px;
+        padding: .1rem 1.2rem;
+
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .img {
+        width: 80px;
+        height: 80px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-end;
+    }
+}

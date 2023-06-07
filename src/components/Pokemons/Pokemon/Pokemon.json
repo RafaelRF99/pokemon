@@ -1,0 +1,41 @@
+[
+    {
+        "name": "Bulbasaur",
+        "type": {
+            "first": "Grass",
+            "second": "Poison"
+        }
+    },
+    {
+        "name": "Venusaur",
+        "type": {
+            "first": "Grass",
+            "second": "Poison"
+        }
+    },
+    {
+        "name": "Charmeleon",
+        "type": {
+            "first": "Fire"
+        }
+    },
+    {
+        "name": "Ivysaur",
+        "type": {
+            "first": "Grass",
+            "second": "Poison"
+        }
+    },
+    {
+        "name": "Charmander",
+        "type": {
+            "first": "Fire"
+        }
+    },
+    {
+        "name": "Charizard",
+        "type": {
+            "first": "Fire"
+        }
+    }
+]
