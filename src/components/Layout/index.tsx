@@ -1,4 +1,5 @@
 import { ReactNode } from 'react'
+import Header from '../Header'
 
 interface LayoutProps {
     children: ReactNode
@@ -7,7 +8,7 @@ interface LayoutProps {
 export default function Layout({children}: LayoutProps) {
     return (
         <div>
-            <h2>Header</h2>
+            <Header />
             <p>Input</p>
             <div>
                 {children}
