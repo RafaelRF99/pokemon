@@ -8,7 +8,7 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
     return (
-        <div>
+        <div style={{ width: "600px", margin: "0 auto" }}>
             <Header />
             <Search />
             <div>{children}</div>
