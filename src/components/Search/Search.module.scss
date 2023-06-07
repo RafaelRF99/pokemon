@@ -1,0 +1,24 @@
+.container {
+    width: 100%;
+    height: 50px;
+    position: relative;
+
+    .search {
+        width: 100%;
+        height: 50px;
+
+        font-size: 18px;
+
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        border: none;
+        color: #FFF;
+        padding: 0 1rem;
+    }
+
+    .icon {
+        position: absolute;
+        top: 10px;
+        right: 1rem;
+    }
+}   

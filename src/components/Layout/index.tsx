@@ -1,18 +1,17 @@
-import { ReactNode } from 'react'
-import Header from '../Header'
+import { ReactNode } from "react";
+import Header from "../Header";
+import Search from "../Search";
 
 interface LayoutProps {
-    children: ReactNode
+    children: ReactNode;
 }
 
-export default function Layout({children}: LayoutProps) {
+export default function Layout({ children }: LayoutProps) {
     return (
         <div>
             <Header />
-            <p>Input</p>
-            <div>
-                {children}
-            </div>
+            <Search />
+            <div>{children}</div>
         </div>
-    )
+    );
 }
