@@ -1,4 +1,4 @@
-// import styles from "./Home.module.scss";
+import styles from "./Home.module.scss";
 // COMPONENTS
 import Layout from "../../components/Layout";
 import Pokemons from "../../components/Pokemons";
@@ -6,7 +6,7 @@ import Pokemons from "../../components/Pokemons";
 export default function Home() {
     return (
         <Layout>
-            <div>
+            <div className={styles.pokemons}>
                 <Pokemons />
             </div>
         </Layout>

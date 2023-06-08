@@ -1,4 +1,7 @@
+import styles from "./Layout.module.scss";
+// REACT
 import { ReactNode } from "react";
+// COMPONENTS
 import Header from "../Header";
 import Search from "../Search";
 
@@ -8,7 +11,7 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
     return (
-        <div style={{ width: "600px", margin: "0 auto" }}>
+        <div className={styles.container}>
             <Header />
             <Search />
             <div>{children}</div>
