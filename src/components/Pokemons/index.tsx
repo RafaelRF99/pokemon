@@ -8,6 +8,7 @@ import { useSearch } from "../../data/hook/useSearch";
 import { IPokemon } from "../../interface/IPokemon";
 // COMPONENTS
 import Pokemon from "./Pokemon";
+import NotFound from "../NotFound";
 
 export default function Pokemons() {
     const { search } = useSearch();
@@ -42,6 +43,8 @@ export default function Pokemons() {
                     </span>
                 );
             });
+        } else {
+            return <NotFound />;
         }
     }
 
