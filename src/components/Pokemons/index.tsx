@@ -21,19 +21,29 @@ export default function Pokemons() {
         );
     }, [search]);
 
-    return (
-        <div className={styles.container}>
-            {listFilter.length > 0
-                ? listFilter.map((pokemon, i) => {
-                      return (
-                          <span key={i}>
-                              <Pokemon pokemon={pokemon} />
-                          </span>
-                      );
-                  })
-                : listPokemon.map((pokemon, i) => {
-                      return <Pokemon pokemon={pokemon} key={i} />;
-                  })}
-        </div>
-    );
+    function searchImprovement() {
+        if (search.length <= 0) {
+            return listPokemon.map((pokemon, i) => {
+                return (
+                    <span key={i}>
+                        <Pokemon pokemon={pokemon} />
+                    </span>
+                );
+            });
+        }
+        if (
+            listFilter.filter((item) => item.name === search) &&
+            listFilter.length > 0
+        ) {
+            return listFilter.map((pokemon, i) => {
+                return (
+                    <span key={i}>
+                        <Pokemon pokemon={pokemon} />
+                    </span>
+                );
+            });
+        }
+    }
+
+    return <div className={styles.container}>{searchImprovement()}</div>;
 }
