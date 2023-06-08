@@ -25,7 +25,11 @@ export default function Pokemons() {
         <div className={styles.container}>
             {listFilter.length > 0
                 ? listFilter.map((pokemon, i) => {
-                      return <Pokemon pokemon={pokemon} key={i} />;
+                      return (
+                          <span key={i}>
+                              <Pokemon pokemon={pokemon} />
+                          </span>
+                      );
                   })
                 : listPokemon.map((pokemon, i) => {
                       return <Pokemon pokemon={pokemon} key={i} />;

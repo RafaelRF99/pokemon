@@ -4,14 +4,13 @@ import { IPokemon } from "../../../interface/IPokemon";
 
 interface PokemonProps {
     pokemon: IPokemon;
-    key: number;
 }
 
 export default function Pokemon(props: PokemonProps) {
     const poke = props.pokemon;
 
     return (
-        <div className={styles.container} key={props.key}>
+        <div className={styles.container}>
             <div>
                 <h1 className={styles.name}>{poke.name}</h1>
                 <div className={styles.type}>
