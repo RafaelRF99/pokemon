@@ -2,7 +2,7 @@ import { createContext, useState, ReactNode } from "react";
 
 interface SearchContextProps {
     search: string;
-    setSearch: any;
+    setSearch: (e: string) => void;
 }
 
 export const SearchContext = createContext({} as SearchContextProps);
