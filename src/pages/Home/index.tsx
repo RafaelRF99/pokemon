@@ -5,7 +5,7 @@ import Pokemons from "../../components/Pokemons";
 
 export default function Home() {
     return (
-        <Layout>
+        <Layout search={true}>
             <div className={styles.pokemons}>
                 <Pokemons />
             </div>

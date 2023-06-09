@@ -7,13 +7,14 @@ import Search from "../Search";
 
 interface LayoutProps {
     children: ReactNode;
+    search?: boolean;
 }
 
-export default function Layout({ children }: LayoutProps) {
+export default function Layout({ children, search }: LayoutProps) {
     return (
         <div className={styles.container}>
             <Header />
-            <Search />
+            {search ? <Search /> : ""}
             <div>{children}</div>
         </div>
     );
