@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Bulbasaur",
+        "hp": 45,
+        "attack": 49,
+        "defense": 49,
+        "specialAttack": 65,
+        "specialDefense": 65,
+        "speed": 45
+    },
+    {
+        "name": "Charmeleon",
+        "hp": 58,
+        "attack": 64,
+        "defense": 58,
+        "specialAttack": 80,
+        "specialDefense": 65,
+        "speed": 80
+    },
+    {
+        "name": "Charmander",
+        "hp": 39,
+        "attack": 52,
+        "defense": 43,
+        "specialAttack": 60,
+        "specialDefense": 50,
+        "speed": 65
+    },
+    {
+        "name": "Venusaur",
+        "hp": 80,
+        "attack": 82,
+        "defense": 83,
+        "specialAttack": 100,
+        "specialDefense": 100,
+        "speed": 80
+    },
+    {
+        "name": "Ivysaur",
+        "hp": 60,
+        "attack": 62,
+        "defense": 63,
+        "specialAttack": 80,
+        "specialDefense": 80,
+        "speed": 60
+    },
+    {
+        "name": "Charizard",
+        "hp": 78,
+        "attack": 84,
+        "defense": 78,
+        "specialAttack": 109,
+        "specialDefense": 86,
+        "speed": 100
+    }
+]
